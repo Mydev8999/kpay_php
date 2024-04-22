@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #40B2B0 ;
+    font-family: Poppins;
+    min-height: 100vh;
+}
+header{
+    margin-top: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.leftHeader, .centerHeader, .rightHeader{
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+.leftHeader img{
+    border-radius: 50%;
+    height: 100%;
+}
+.leftHeader{
+    padding: 0 2%;
+    justify-content: flex-start;
+}
+.centerHeader{
+    justify-content: center;
+    color: #333333;
+}
+.rightHeader svg{
+    fill: #333333;
+    height: 70%;
+    justify-content: flex-end;
+}
+.rightHeader {
+    padding: 0 2%;
+    justify-content: flex-end;
+}
+.accountSolde{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #333333;
+}
+.content{
+    width: 100vw;
+    border-radius: 10px 10px 0 0;
+    background-color: #090909;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 100%;
+    height: 100vh;
+}
+.buttonWrapper{
+    margin-top: 15px;
+    padding: 0 10% ;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.buttonContainer p{
+    color: #fff;
+    font-size: 1rem;
+}
+.content button{
+    background-color: #353535;
+    color: #333333;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content button svg{
+    height: 30px;
+    fill: #fff;
+}
+.transac{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 2% 2% ;
+}
+.transac h1{
+    color: #fff;
+    font-size: 1rem;
+}
+.transacWrapper{
+    border-radius: 10px;
+    background-color: #1F1F1F;
+    overflow: hidden;
+}
+.transacWrapperRow{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333333;
+}
+.transacWrapperRowLeft{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+}
+.transacWrapperRowLeft img{
+    border-radius: 50%;
+    height: 90%;
+}
+.transacWrapperTextContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.transacWrapperTextContainer *{
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+.transacWrapperTextContainer h2{
+    font-weight: 200;
+}
+.transacWrapperRowRight{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transacWrapperRowRight h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.plus{
+    color: #83FF8F;
+}
+.moins{
+    color: #FF8F8F;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    .leftHeader, .centerHeader, .rightHeader{
+        width: 100%;
+    }
+    .leftHeader img{
+        height: 50px;
+    }
+    .buttonContainer p{
+        font-size: 0.5rem;
+    }
+}
