@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@639&display=swap');
+
+
+h1{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 639;
+    font-style: normal;
+    text-align: center;
+}
