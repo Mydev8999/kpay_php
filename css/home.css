@@ -21,7 +21,7 @@ h1{
 
 header{
     background-color: #0E46A3;
-    height: 400px;
+    height: 100vh;
     width: auto;
     display: flex;
     justify-content: center;
@@ -34,3 +34,59 @@ span:hover{
     font-size: 90px;
     color: black;
 }
+
+#bank{
+    height: 100px;
+    width: 100px;
+    transform: rotate(15deg);
+}
+#card{
+    height: 100px;
+    width: 100px;
+    transform: rotate(-10deg);
+}
+
+#buttonSection{
+    background-color: #0E46A3;
+    height: 30vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#buttonDiv{
+    margin-bottom: 10px;
+}
+
+.button{
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.buttonContent{
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: solid 1px black;
+    
+}
+
+.buttonContent:hover{
+    transition: 0.2s ease-in;
+    box-shadow: 3px 3px 3px black;
+    
+}
+

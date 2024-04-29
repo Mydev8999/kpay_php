@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,29 @@
 </head>
 <body>
     <header>
+        <img id="bank" src="image/banque.png" alt="banque image" >
         <h1><span>K</span><span>p</span><span>a</span><span>y</span></h1>
+        <img id="card" src="./image/paiement-par-carte.png" alt="card" >
+     
+
     </header>
-    <main>
+    <section id="buttonSection">
+        <div id="buttonDiv">
+            <div class="buttonContent">
+                <a class="button" href="">m'inscrire</a>
 
-    </main>
+            </div>
+            <br>
+            <div class="buttonContent">
+                <a class="button" href="">me connecter</a>
+            </div>
+            
 
-    <footer>
+        </div>
+         
+    </section>
+  
 
-    </footer>
+    
 </body>
 </html>
