@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Kpay</h1>
+        <h1><span>K</span><span>p</span><span>a</span><span>y</span></h1>
     </header>
     <main>
 

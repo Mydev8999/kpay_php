@@ -2,10 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@639&display=swap');
 
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 h1{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 639;
     font-style: normal;
-    text-align: center;
+    color: white;
+    font-size: 100px;
+    
+
+
+}
+
+header{
+    background-color: #0E46A3;
+    height: 400px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+span:hover{
+    transition: 0.2s ease-in-out;
+    font-size: 90px;
+    color: black;
 }
