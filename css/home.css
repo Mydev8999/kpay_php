@@ -20,7 +20,7 @@ h1{
 }
 
 header{
-    background-color: #0E46A3;
+    background-color: #0caf99;
     height: 100vh;
     width: auto;
     display: flex;
@@ -47,7 +47,7 @@ span:hover{
 }
 
 #buttonSection{
-    background-color: #0E46A3;
+    background-color: #0caf99;
     height: 30vh;
     width: auto;
     display: flex;
@@ -90,6 +90,8 @@ span:hover{
     
 }
 
+
+/* responsive */
 @media screen and (max-width: 450px) {
     header{
         display: grid;
