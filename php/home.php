@@ -18,7 +18,7 @@
     <section id="buttonSection">
         <div id="buttonDiv">
             <div class="buttonContent">
-                <a class="button" href="">m'inscrire</a>
+                <a class="button" href="inscription.php">m'inscrire</a>
 
             </div>
             <br>
@@ -35,3 +35,4 @@
     
 </body>
 </html>
+
