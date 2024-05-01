@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@639&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    background-color: #0caf99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 639;
+    font-style: normal;
+    color: white;
+    font-size: 100px;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+}
+
+a{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 639;
+    font-size: 50px;
+    color: white;
+}

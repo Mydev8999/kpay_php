@@ -1,14 +1,9 @@
 <?php 
-$host = "localhost";
-$dbname = 'kpayphp'; // Le nom de la base de données
-$username = 'root'; // Le nom d'utilisateur MySQL
-$password = '';
+include('./server/server.php');
 
 
 try{
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connexion à la base de données réussie.";
+ 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $nom = $_POST["username"];
         $email = $_POST["email"];
@@ -53,7 +48,7 @@ try{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscription | kpay</title>
-    <link rel="shortcut icon" href="../image/K.png" type="image/x-icon">
+    <link rel="icon" href="../image/K.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/inscription.css">
 </head>
 <body>
