@@ -58,7 +58,7 @@ try{
     <main>
         
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <h1>s'inscrire</h1>
+            <h1>inscription</h1>
             <div class="inputContainer">
                 <img src="../image/homme.png" alt="">
                 <input id="username" name="username" type="text" required placeholder="Nom d'utilisateur">
