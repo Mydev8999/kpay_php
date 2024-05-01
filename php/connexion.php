@@ -21,13 +21,15 @@ try {
             if (password_verify($mdp, $stored_password_hash)) {
                 // Mot de passe correct, authentification réussie
                 echo "Connexion réussie!";
-                header("Location: home.php");
+                header("Location: dashboard.php");
                 $_SESSION["email"] = $email;
                 $_SESSION["pwd"] = $mdp;
+                $_SESSION["connectUser"] = true;
                 // Vous pouvez rediriger l'utilisateur vers la page d'accueil
             } else {
                 // Mot de passe incorrect, authentification échouée
                 echo "Mot de passe incorrect. Connexion échouée.";
+                session_destroy();
             }
         } else {
             // Aucun utilisateur avec cet e-mail trouvé
