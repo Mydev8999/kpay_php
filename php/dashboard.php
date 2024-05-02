@@ -18,26 +18,33 @@ $sql2->execute([
 $row2 = $sql2->fetch();
 $stored_ketons = $row2["ketons"];
 
-$sql3 = $pdo->prepare("SELECT email FROM users WHERE username = :username");
-$sql3->execute([
-    ":username"=>$stored_name
-]);
-
-$row3 = $sql3->fetch();
-$stored_email = $row3["email"];
 
 try{
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $mail = $_POST["Smail"];
         $ketons = $_POST["number"];
+        
+        $sql3 = $pdo->prepare("SELECT email FROM users WHERE email = :email");
+        $sql3->execute([
+            ":email"=>$mail
+        ]);
+
+        $row3 = $sql3->fetch();
+        $stored_email = $row3["email"];
         if($stored_ketons >= $ketons && $ketons > 0){
             if($sql3->rowCount() > 0) {
-                $sqlsend = $pdo->prepare("UPDATE users SET ketons = :ketons WHERE email = :email;");
+                $sqlsend = $pdo->prepare("UPDATE users SET ketons = ketons + :ketons WHERE email = :email;");
                 $sqlsend->execute([
                     ":ketons"=>$ketons,
                     ":email"=>$mail
 
                 ]);
+                $sqlKremove = $pdo->prepare("UPDATE users SET ketons = ketons - :ketons WHERE email = :email;");
+                $sqlKremove->execute([
+                    ":email"=>$stored_email,
+                    ":ketons"=>$ketons
+                ]);
+                
             }else{
                 echo "email not exist";
             }
